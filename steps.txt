@@ -1,0 +1,43 @@
+==========================================
+GIT INSTALLATION & GITHUB SETUP
+Windows PowerShell
+==========================================
+STEP 1: Install Git
+
+        winget install --id Git.Git -e --source winget
+
+STEP 2: Add Git to PATH for the current session
+
+        $env:Path += ";C:\Program Files\Git\cmd"
+
+STEP 3: Verify Git installation
+
+        Test-Path "C:\Program Files\Git\cmd\git.exe" git --version
+
+STEP 4: Configure Git username
+
+        git config --global user.name "Your Name"
+
+STEP 5: Configure Git email
+
+        git config --global user.email "your_email@example.com"
+
+STEP 6: Verify Git configuration
+
+        git config --global --list
+
+STEP 7: Display username
+
+        git config --global user.name
+
+STEP 8: Display email
+
+        git config --global user.email
+
+STEP 9: Verify Git executable location
+
+        where.exe git
+
+==========================================
+GIT SETUP COMPLETED
+==========================================
